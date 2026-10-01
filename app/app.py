@@ -1,8 +1,9 @@
+import os
 import streamlit as st
 from transformers import pipeline
 
 # Absolute path to your fine‑tuned model folder
-MODEL_PATH = "D:/resume_screening_nlp/models/resume_model"
+MODEL_PATH = "models/resume_model"
 
 # Load the model pipeline
 nlp_model = pipeline("text-classification", model=MODEL_PATH)
