@@ -1,13 +1,9 @@
 import os
 import streamlit as st
 from transformers import pipeline
-
-# Absolute path to your fine‑tuned model folder
-MODEL_PATH = "models/resume_model"
-
-# Load the model pipeline
-nlp_model = pipeline("text-classification", model=MODEL_PATH)
-
+# Build absolute path to the model folder
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "models", "resume_model")
+nlp_model = pipeline("text-classification", model=MODEL_PATH, local_files_only=True)
 # Streamlit UI
 st.title("📄 Resume Screening NLP Tool")
 
