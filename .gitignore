@@ -1,0 +1,19 @@
+# Ignore environments
+env/
+venv/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore notebooks checkpoints
+.ipynb_checkpoints/
+
+# Ignore logs
+*.log
+
+# Ignore large model caches (optional, if you only want to push configs)
+*.bin
+*.safetensors
