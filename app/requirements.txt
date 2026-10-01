@@ -1,8 +1,0 @@
-torch
-torchvision
-torchaudio
-transformers
-datasets
-scikit-learn
-streamlit
- 
